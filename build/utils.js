@@ -48,7 +48,8 @@ exports.cssLoaders = function (options) {
       return ExtractTextPlugin.extract({
         use: loaders,
         fallback: 'vue-style-loader',
-        publicPath:'../../' //Fix for Github Pages
+        //publicPath:'../../' 
+        //Fix for Github Pages
       })
     } else {
       return ['vue-style-loader'].concat(loaders)
